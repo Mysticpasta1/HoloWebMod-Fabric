@@ -5,6 +5,9 @@
   "version": "${version}",
   "license": "MIT",
   "entrypoints": {
+    "main": [
+      "com.cinemamod.fabric.CinemaMod"
+    ],
     "client": [
       "com.cinemamod.fabric.CinemaModClient"
     ]

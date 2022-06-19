@@ -1,5 +1,6 @@
 package com.cinemamod.fabric.block;
 
+import com.cinemamod.fabric.init.BlockEntityInit;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -31,7 +32,7 @@ public class ScreenBlock extends Block implements BlockEntityProvider {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.empty();
+        return VoxelShapes.fullCube();
     }
 
     public static void register() {
@@ -45,7 +46,7 @@ public class ScreenBlock extends Block implements BlockEntityProvider {
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new ScreenBlockEntity(ScreenBlockEntity.SCREEN_BLOCK_ENTITY, pos, state);
+        return new ScreenBlockEntity(BlockEntityInit.SCREEN_BLOCK_ENTITY, pos, state);
     }
 
 }

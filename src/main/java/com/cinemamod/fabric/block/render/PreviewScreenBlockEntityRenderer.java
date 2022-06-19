@@ -2,6 +2,7 @@ package com.cinemamod.fabric.block.render;
 
 import com.cinemamod.fabric.CinemaModClient;
 import com.cinemamod.fabric.block.PreviewScreenBlockEntity;
+import com.cinemamod.fabric.init.BlockEntityInit;
 import com.cinemamod.fabric.screen.PreviewScreen;
 import com.cinemamod.fabric.screen.PreviewScreenManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -92,7 +93,7 @@ public class PreviewScreenBlockEntityRenderer implements BlockEntityRenderer<Pre
     }
 
     public static void register() {
-        BlockEntityRendererRegistry.register(PreviewScreenBlockEntity.PREVIEW_SCREEN_BLOCK_ENTITY, PreviewScreenBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(BlockEntityInit.PREVIEW_SCREEN_BLOCK_ENTITY, PreviewScreenBlockEntityRenderer::new);
     }
 
 }

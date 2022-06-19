@@ -3,6 +3,7 @@ package com.cinemamod.fabric.cef;
 import com.cinemamod.fabric.CinemaMod;
 import com.cinemamod.fabric.CinemaModClient;
 import com.cinemamod.fabric.screen.Screen;
+import com.cinemamod.fabric.screen.ScreenManager;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefFrame;
 import org.cef.handler.CefLoadHandler;

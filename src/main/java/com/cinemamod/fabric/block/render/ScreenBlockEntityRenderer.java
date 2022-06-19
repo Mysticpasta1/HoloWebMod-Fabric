@@ -2,6 +2,7 @@ package com.cinemamod.fabric.block.render;
 
 import com.cinemamod.fabric.CinemaModClient;
 import com.cinemamod.fabric.block.ScreenBlockEntity;
+import com.cinemamod.fabric.init.BlockEntityInit;
 import com.cinemamod.fabric.screen.Screen;
 import com.cinemamod.fabric.screen.ScreenManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -51,7 +52,7 @@ public class ScreenBlockEntityRenderer implements BlockEntityRenderer<ScreenBloc
     }
 
     public static void register() {
-        BlockEntityRendererRegistry.register(ScreenBlockEntity.SCREEN_BLOCK_ENTITY, ScreenBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(BlockEntityInit.SCREEN_BLOCK_ENTITY, ScreenBlockEntityRenderer::new);
     }
 
 }

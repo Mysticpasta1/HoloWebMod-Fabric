@@ -127,5 +127,4 @@ public class VideoHistoryScreen extends Screen {
         videoListWidget.mouseScrolled(mouseX, mouseY, amount);
         return super.mouseScrolled(mouseX, mouseY, amount);
     }
-
 }
